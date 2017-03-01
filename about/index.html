@@ -110,7 +110,8 @@
             font-family: &apos;iconfont&apos;;  /* project id 243151 */
             src: url">
 <meta property="og:image" content="http://yoursite.com/../img/my.jpg">
-<meta property="og:updated_time" content="2017-03-01T16:13:11.000Z">
+<meta property="og:image" content="http://yoursite.com/../img/rays-main.png">
+<meta property="og:updated_time" content="2017-03-01T16:56:41.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="good_zou">
 <meta name="twitter:description" content="个人简介
@@ -352,7 +353,6 @@
         .leftBox{
             background-color: rgb(37,70,101);
             width:240px;
-            padding-top: 50px;
             padding-bottom: 100px;
             float: left;
             color: #fff;
@@ -373,6 +373,32 @@
             margin:0 auto;
             border:3px solid #fff;
             margin-bottom: 30px;
+            margin-top: 30px;
+        }
+        .perImgBox{
+            width:240px;
+            height:270px;
+            padding-top:30px;
+            overflow: hidden;
+            position: relative;
+            z-index:11;
+        }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .perBgAnima{
+            position: absolute;
+            top:-40px;
+            left: -80px;
+            width: 400px;
+            height: 400px;
+            z-index:-1;
+            transform-origin:200px 200px;
+            animation-name: spin;
+            animation-duration: 40000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
         }
         .perBox{
             list-style: none;
@@ -433,7 +459,10 @@
 <body>
 <div class="box cl">
     <div class="leftBox">
-        <img src="../img/my.jpg" alt="" class="perImg">
+        <div class="perImgBox">
+            <img src="../img/my.jpg" alt="" class="perImg">
+            <img class="perBgAnima" src="../img/rays-main.png">
+        </div>
         <ul class="perBox">
             <li><i class="iconfont fontBold">&#xe638;</i>23岁</li>
             <li><i class="iconfont">&#xe600;</i>湖南</li>
@@ -517,7 +546,7 @@
             <p class="listTitle">H5分享页面</p>
             <p>项目介绍：用于app分享的h5页面</p>
             <p>主要工作：负责前端开发与维护</p>
-            <p>主要使用技术：Zepto</p>
+            <p>使用技术：Zepto</p>
         </div>
 
         <div class="projectBox">
