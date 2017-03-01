@@ -111,7 +111,8 @@
         }
         @font-face {
             font-family: &apos;iconfon">
-<meta property="og:updated_time" content="2017-03-01T13:58:27.000Z">
+<meta property="og:image" content="http://yoursite.com/../img/my.jpg">
+<meta property="og:updated_time" content="2017-03-01T14:46:39.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="good_zou">
 <meta name="twitter:description" content="个人简介
@@ -124,6 +125,7 @@
         }
         @font-face {
             font-family: &apos;iconfon">
+<meta name="twitter:image" content="http://yoursite.com/../img/my.jpg">
 
 
 
@@ -340,20 +342,31 @@
             -webkit-text-stroke-width: 0.2px;
             -moz-osx-font-smoothing: grayscale;
         }
+        .cl:after {
+            display: block;
+            clear: both;
+            content: "";
+            visibility: hidden;
+            height: 0
+        }
         .box{
-            height:100%;
             width:100%;
         }
         .leftBox{
             background-color: rgb(37,70,101);
-            height:100%;
-            width:300px;
+            width:30%;
             padding-top: 50px;
+            padding-bottom: 100px;
             float: left;
+            color: #fff;
+            height:100%;
         }
         .rightBox{
+            width:70%;
             height:100%;
-            float: right;
+            float: left;
+            padding-left: 30px;
+            box-sizing:border-box;
         }
         .perImg{
             width:150px;
@@ -382,12 +395,46 @@
         .fontBold{
             font-weight:bold;
         }
+        .skillsBox{
+            margin-left: 30px;
+        }
+        .skillsList{
+            margin-bottom:10px;
+        }
+        .skillsList p{
+            margin:0 0 5px 0;
+            padding:0;
+            font-size:15px;
+        }
+        .skillsLine{
+            background-color: rgb(130,145,158);
+            height:5px;
+        }
+        .colorMain{
+            color: #254665;
+        }
+        .projectBox{
+            margin:10px 0 10px 0;
+        }
+        .projectBox i{
+            margin-right:10px;
+        }
+        .projectBox p{
+            color: #666;
+            margin: 0;
+        }
+        .projectBox h3{
+            margin: 0;
+        }
+        .listTitle{
+            color: #444 !important;
+        }
     </style>
 </head>
 <body>
-<div class="box">
+<div class="box cl">
     <div class="leftBox">
-        <img src="" alt="" class="perImg">
+        <img src="../img/my.jpg" alt="" class="perImg">
         <ul class="perBox">
             <li><i class="iconfont fontBold">&#xe638;</i>23岁</li>
             <li><i class="iconfont">&#xe600;</i>湖南</li>
@@ -395,9 +442,94 @@
             <li><i class="iconfont">&#xe636;</i>543729532@qq.com</li>
             <li><i class="iconfont">&#xe634;</i><a target="_blank" href="http://www.goodzou.com">www.goodzou.com</a></li>
         </ul>
+        <div class="skillsBox">
+            <h3>职业技能</h3>
+            <div class="skillsList">
+                <p>Html</p>
+                <div class="skillsLine" style="width:200px;"></div>
+            </div>
+            <div class="skillsList">
+                <p>Css</p>
+                <div class="skillsLine" style="width:190px;"></div>
+            </div>
+            <div class="skillsList">
+                <p>JavaScript</p>
+                <div class="skillsLine" style="width:150px;"></div>
+            </div>
+            <div class="skillsList">
+                <p>Avalon</p>
+                <div class="skillsLine" style="width:120px;"></div>
+            </div>
+            <div class="skillsList">
+                <p>Webpack</p>
+                <div class="skillsLine" style="width:130px;"></div>
+            </div>
+            <div class="skillsList">
+                <p>Vue</p>
+                <div class="skillsLine" style="width:150px;"></div>
+            </div>
+            <div class="skillsList">
+                <p>jQuery</p>
+                <div class="skillsLine" style="width:150px;"></div>
+            </div>
+            <div class="skillsList">
+                <p>Gulp</p>
+                <div class="skillsLine" style="width:120px;"></div>
+            </div>
+        </div>
+        <div class="skillsBox">
+            <h3>兴趣爱好</h3>
+            <span>旅游</span>
+            <apsn>摄影</apsn>
+        </div>
     </div>
     <div class="rightBox">
+        <h1 class="colorMain" style="margin:30px 0 0 0">邹应洋</h1>
+        <span class="colorMain">求职目标:前端开发</span>
+        <div class="projectBox">
+            <h3 class="colorMain"><i class="iconfont">&#xe622;</i>工作经历</h3>
+            <p>2015/09 - 2017/02 湖南宝伦天地信息科技有限公司 前端开发</p>
+            <p>2015/02 - 2015/08 湖南启能科技有限公司 前端开发</p>
+        </div>
 
+        <div class="projectBox">
+            <h3 class="colorMain"><i class="iconfont">&#xe613;</i>项目经验</h3>
+            <br>
+            <p class="listTitle">接口文档管理系统</p>
+            <p>项目介绍：管理公司的所有接口，其主要功能为增删改查</p>
+            <p>主要工作：负责前端开发与维护</p>
+            <p>主要使用技术：jQuery + Bootstrap + Gulp</p>
+            <br>
+            <p class="listTitle">社区半径话费流量充值</p>
+            <p>项目介绍：话费，流量充值功能</p>
+            <p>主要工作：配合ios、Android同事开发话费、流量充值功能</p>
+            <p>使用技术：与ios、Android端进行混合开发</p>
+            <br>
+            <p class="listTitle">后台管理系统</p>
+            <p>项目介绍：面向公司运营人员使用的管理系统，对用户权限校验比较高</p>
+            <p>主要工作：负责项目的前端开发与维护</p>
+            <p>使用技术： jQuery + Amazeui</p>
+            <br>
+            <p class="listTitle">社区半径微信公众号</p>
+            <p>项目介绍：一款集开门，物业服务，个人中心等功能的微信公众号</p>
+            <p>主要工作：负责前端开发与维护</p>
+            <p>使用技术： Webpack + Vue</p>
+            <br>
+            <p class="listTitle">H5分享页面</p>
+            <p>项目介绍：用于app分享的h5羽绒棉</p>
+            <p>主要工作：负责前端开发与维护</p>
+            <p>主要使用技术：Zepto</p>
+        </div>
+
+        <div class="projectBox">
+            <h3 class="colorMain"><i class="iconfont">&#xe624;</i>教育背景</h3>
+            <p>2012/09 - 2014/11 湖南信息职业技术学院 计算机网络工程</p>
+        </div>
+
+        <div class="projectBox">
+            <h3 class="colorMain"><i class="iconfont">&#xe62c;</i>自我评价</h3>
+            <p>本人做事认真，拥有较强的学习能力与团队精神，时刻保持学习，积极拥抱变化。喜欢前端开发，能够很快的适应工作环境。</p>
+        </div>
     </div>
 </div>
 </body>
