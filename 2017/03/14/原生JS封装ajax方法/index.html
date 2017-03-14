@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo," />
+  <meta name="keywords" content="js," />
 
 
 
@@ -87,16 +87,16 @@
 
 
 
-<meta name="description" content="最近突然想建个个人博客,然后花了一个晚上的时间利用hexo,github搭建了一个,跟大家聊一下我在搭建过程中的一些心得.">
+<meta name="description" content="在不需要引入jQuery的情况下,自己写一个ajax函数很有必要">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo搭建个人博客心得">
-<meta property="og:url" content="http://yoursite.com/2017/02/25/Hexod搭建个人博客心得/index.html">
+<meta property="og:title" content="原生JS封装ajax方法【转】">
+<meta property="og:url" content="http://yoursite.com/2017/03/14/原生JS封装ajax方法/index.html">
 <meta property="og:site_name" content="good_zou">
-<meta property="og:description" content="最近突然想建个个人博客,然后花了一个晚上的时间利用hexo,github搭建了一个,跟大家聊一下我在搭建过程中的一些心得.">
-<meta property="og:updated_time" content="2017-03-14T14:13:19.000Z">
+<meta property="og:description" content="在不需要引入jQuery的情况下,自己写一个ajax函数很有必要">
+<meta property="og:updated_time" content="2017-03-14T14:27:12.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo搭建个人博客心得">
-<meta name="twitter:description" content="最近突然想建个个人博客,然后花了一个晚上的时间利用hexo,github搭建了一个,跟大家聊一下我在搭建过程中的一些心得.">
+<meta name="twitter:title" content="原生JS封装ajax方法【转】">
+<meta name="twitter:description" content="在不需要引入jQuery的情况下,自己写一个ajax函数很有必要">
 
 
 
@@ -124,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/02/25/Hexod搭建个人博客心得/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/03/14/原生JS封装ajax方法/"/>
 
 
 
 
 
-  <title> Hexo搭建个人博客心得 | good_zou </title>
+  <title> 原生JS封装ajax方法【转】 | good_zou </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -279,7 +279,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/25/Hexod搭建个人博客心得/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/14/原生JS封装ajax方法/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="good_zou">
@@ -300,7 +300,7 @@
             
             
               
-                Hexo搭建个人博客心得
+                原生JS封装ajax方法【转】
               
             
           </h1>
@@ -315,8 +315,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-25T14:56:58+08:00">
-                2017-02-25
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-14T22:16:42+08:00">
+                2017-03-14
               </time>
             
 
@@ -338,8 +338,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
+                  <a href="/categories/原生js/" itemprop="url" rel="index">
+                    <span itemprop="name">原生js</span>
                   </a>
                 </span>
 
@@ -356,8 +356,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/02/25/Hexod搭建个人博客心得/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/25/Hexod搭建个人博客心得/" itemprop="commentCount"></span>
+                <a href="/2017/03/14/原生JS封装ajax方法/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/14/原生JS封装ajax方法/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -365,7 +365,7 @@
 
           
           
-             <span id="/2017/02/25/Hexod搭建个人博客心得/" class="leancloud_visitors" data-flag-title="Hexo搭建个人博客心得">
+             <span id="/2017/03/14/原生JS封装ajax方法/" class="leancloud_visitors" data-flag-title="原生JS封装ajax方法【转】">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -394,18 +394,21 @@
       
 
       
-        <p>最近突然想建个个人博客,然后花了一个晚上的时间利用hexo,github搭建了一个,跟大家聊一下我在搭建过程中的一些心得.<br><a id="more"></a></p>
-<h3 id="环境要求"><a href="#环境要求" class="headerlink" title="环境要求"></a>环境要求</h3><p>Node<br>Git<br>(网上有很多教程,就不赘述了)</p>
-<h3 id="全局安装Hexo"><a href="#全局安装Hexo" class="headerlink" title="全局安装Hexo"></a>全局安装Hexo</h3><p>在终端中输入 <code>$ sudo npm install -g hexo</code></p>
-<h3 id="blog项目下安装"><a href="#blog项目下安装" class="headerlink" title="blog项目下安装"></a>blog项目下安装</h3><p>新建blog项目文件<br>cd到你的blog项目下面 <code>$ cd blog</code><br>初始化<code>blog$ hexo init</code><br>生成静态页面<code>blog$ hexo generate</code><br>终端命令显示如下命令则表示生成静态页面成功<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">INFO  Start processing</div><div class="line">INFO  Files loaded in 922 ms</div><div class="line">INFO  Generated: archives/2017/02/index.html...</div></pre></td></tr></table></figure></p>
-<p>本地启动<code>$ blog$ hexo server</code><br>终端命令显示如下命令表示本地启动成功<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">INFO  Start processing</div><div class="line">INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.</div></pre></td></tr></table></figure></p>
-<p>浏览器输入<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a><br>如正常显示页面<br>则本地已经调试成功</p>
-<h3 id="Github配置"><a href="#Github配置" class="headerlink" title="Github配置"></a>Github配置</h3><p>注册github账号<br>建立Repository<br>（需要注意的是仓库名必须用 username.github.io。比如我的用户名为 abc 则仓库名称为 abc.github.io）<br>打开blog项目下的_config.yml文件<br>搜索关键字 <code>deploy</code>，按下面格式修改<br>deploy:<br>&nbsp;&nbsp;&nbsp;&nbsp;type: git<br>&nbsp;&nbsp;&nbsp;&nbsp;repo: &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/zouyingyang/zouyingyang.github.io.git" target="_blank" rel="external">https://github.com/zouyingyang/zouyingyang.github.io.git</a>   （改成你的用户名)<br>&nbsp;&nbsp;&nbsp;&nbsp;branch: master</p>
-<p>安装一个依赖<br><code>blog$ npm install hexo-deployer-git --save</code></p>
-<p>部署到github<br><code>blog$ hexo deploy</code><br>在浏览器中打开<a href="http://zouyingyang.github.io/" target="_blank" rel="external">http://zouyingyang.github.io/</a></p>
-<p>Hexo命令简写<br>hexo new 博客名称 : hexo n 博客名称 //新建博客<br>hexo generate : hexo g  //生成静态页面<br>hexo server : hexo s  //启动本地服务<br>hexo deploy : hexo d  //部署</p>
-<p>blog<br>　｜<br>　｜－－ _config.yml （配置文件）<br>　｜－－ node_modules<br>　｜－－ public (静态文件)<br>　｜－－ source (需要提交的都放在这里。比如：文章，图片)<br>　｜－－ db.json<br>　｜－－ package.json<br>　｜－－ scaffolds<br>　｜－－ themes （主题）</p>
-<h3 id="参考文献："><a href="#参考文献：" class="headerlink" title="参考文献："></a>参考文献：</h3><p><a href="http://www.ezlippi.com/blog/2016/02/jekyll-to-hexo.html#more" target="_blank" rel="external">Jekyll迁移到Hexo搭建个人博客</a><br><a href="http://theme-next.iissnan.com/" target="_blank" rel="external">Next主题</a><br><a href="http://www.tuicool.com/articles/I36zYr" target="_blank" rel="external">hexo命令及Markdown语法</a></p>
+        <p>在不需要引入jQuery的情况下,自己写一个ajax函数很有必要<br>    <a id="more"></a></p>
+<h2 id="JS原生ajax"><a href="#JS原生ajax" class="headerlink" title="JS原生ajax"></a>JS原生ajax</h2><p>ajax：一种请求数据的方式，不需要刷新整个页面；<br>ajax的技术核心是 XMLHttpRequest 对象；<br>ajax 请求过程：创建 XMLHttpRequest 对象、连接服务器、发送请求、接收响应数据；</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div></pre></td><td class="code"><pre><div class="line">ajax(&#123;</div><div class="line">    <span class="attr">url</span>: <span class="string">"./TestXHR.aspx"</span>,              <span class="comment">//请求地址</span></div><div class="line">    type: <span class="string">"POST"</span>,                       <span class="comment">//请求方式</span></div><div class="line">    data: &#123; <span class="attr">name</span>: <span class="string">"super"</span>, <span class="attr">age</span>: <span class="number">20</span> &#125;,        <span class="comment">//请求参数</span></div><div class="line">    dataType: <span class="string">"json"</span>,</div><div class="line">    <span class="attr">success</span>: <span class="function"><span class="keyword">function</span> (<span class="params">response, xml</span>) </span>&#123;</div><div class="line">        <span class="comment">// 此处放成功后执行的代码</span></div><div class="line">    &#125;,</div><div class="line">    <span class="attr">fail</span>: <span class="function"><span class="keyword">function</span> (<span class="params">status</span>) </span>&#123;</div><div class="line">        <span class="comment">// 此处放失败后执行的代码</span></div><div class="line">    &#125;</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">ajax</span>(<span class="params">options</span>) </span>&#123;</div><div class="line">    options = options || &#123;&#125;;</div><div class="line">    options.type = (options.type || <span class="string">"GET"</span>).toUpperCase();</div><div class="line">    options.dataType = options.dataType || <span class="string">"json"</span>;</div><div class="line">    <span class="keyword">var</span> params = formatParams(options.data);</div><div class="line"></div><div class="line">    <span class="comment">//创建 - 非IE6 - 第一步</span></div><div class="line">    <span class="keyword">if</span> (<span class="built_in">window</span>.XMLHttpRequest) &#123;</div><div class="line">        <span class="keyword">var</span> xhr = <span class="keyword">new</span> XMLHttpRequest();</div><div class="line">    &#125; <span class="keyword">else</span> &#123; <span class="comment">//IE6及其以下版本浏览器</span></div><div class="line">        <span class="keyword">var</span> xhr = <span class="keyword">new</span> ActiveXObject(<span class="string">'Microsoft.XMLHTTP'</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">//连接 和 发送 - 第二步</span></div><div class="line">    <span class="keyword">if</span> (options.type == <span class="string">"GET"</span>) &#123;</div><div class="line">        xhr.open(<span class="string">"GET"</span>, options.url + <span class="string">"?"</span> + params, <span class="literal">true</span>);</div><div class="line">        xhr.send(<span class="literal">null</span>);</div><div class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (options.type == <span class="string">"POST"</span>) &#123;</div><div class="line">        xhr.open(<span class="string">"POST"</span>, options.url, <span class="literal">true</span>);</div><div class="line">        <span class="comment">//设置表单提交时的内容类型</span></div><div class="line">        xhr.setRequestHeader(<span class="string">"Content-Type"</span>, <span class="string">"application/x-www-form-urlencoded"</span>);</div><div class="line">        xhr.send(params);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">//接收 - 第三步</span></div><div class="line">    xhr.onreadystatechange = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="keyword">if</span> (xhr.readyState == <span class="number">4</span>) &#123;</div><div class="line">            <span class="keyword">var</span> status = xhr.status;</div><div class="line">            <span class="keyword">if</span> (status &gt;= <span class="number">200</span> &amp;&amp; status &lt; <span class="number">300</span>) &#123;</div><div class="line">                options.success &amp;&amp; options.success(xhr.responseText, xhr.responseXML);</div><div class="line">            &#125; <span class="keyword">else</span> &#123;</div><div class="line">                options.fail &amp;&amp; options.fail(status);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="comment">//格式化参数</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">formatParams</span>(<span class="params">data</span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> arr = [];</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> name <span class="keyword">in</span> data) &#123;</div><div class="line">        arr.push(<span class="built_in">encodeURIComponent</span>(name) + <span class="string">"="</span> + <span class="built_in">encodeURIComponent</span>(data[name]));</div><div class="line">    &#125;</div><div class="line">    arr.push((<span class="string">"v="</span> + <span class="built_in">Math</span>.random()).replace(<span class="string">"."</span>,<span class="string">""</span>));</div><div class="line">    <span class="keyword">return</span> arr.join(<span class="string">"&amp;"</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="1、创建"><a href="#1、创建" class="headerlink" title="1、创建"></a>1、创建</h3><p>1.1、IE7及其以上版本中支持原生的 XHR 对象，因此可以直接用： <code>var oAjax = new XMLHttpRequest()</code>;</p>
+<p>1.2、IE6及其之前的版本中，XHR对象是通过MSXML库中的一个ActiveX对象实现的。有的书中细化了IE中此类对象的三种不同版本，即MSXML2.XMLHttp、MSXML2.XMLHttp.3.0 和 MSXML2.XMLHttp.6.0；个人感觉太麻烦，可以直接使用下面的语句创建： <code>var oAjax=new ActiveXObject(’Microsoft.XMLHTTP’)</code>;</p>
+<h3 id="2、连接和发送"><a href="#2、连接和发送" class="headerlink" title="2、连接和发送"></a>2、连接和发送</h3><p>2.1、open()函数的三个参数：请求方式、请求地址、是否异步请求(同步请求的情况极少，至今还没用到过)；</p>
+<p>2.2、GET 请求方式是通过URL参数将数据提交到服务器的，POST则是通过将数据作为 send 的参数提交到服务器；</p>
+<p>2.3、POST 请求中，在发送数据之前，要设置表单提交的内容类型；</p>
+<p>2.4、提交到服务器的参数必须经过 <code>encodeURIComponent()</code> 方法进行编码，实际上在参数列表”key=value”的形式中，key 和 value 都需要进行编码，因为会包含特殊字符。每次请求的时候都会在参数列表中拼入一个 “v=xx” 的字符串，这样是为了拒绝缓存，每次都直接请求到服务器上。</p>
+<p><code>encodeURI()</code> ：用于整个 URI 的编码，不会对本身属于 URI 的特殊字符进行编码，如冒号、正斜杠、问号和井号；其对应的解码函数 <code>decodeURI()</code>；<br><code>encodeURIComponent()`` ：用于对 URI 中的某一部分进行编码，会对它发现的任何非标准字符进行编码；其对应的解码函数</code>decodeURIComponent()`；</p>
+<h3 id="3、接收"><a href="#3、接收" class="headerlink" title="3、接收"></a>3、接收</h3><p>3.1、接收到响应后，响应的数据会自动填充XHR对象，相关属性如下<br>responseText：响应返回的主体内容，为字符串类型；<br>responseXML：如果响应的内容类型是 <code>&quot;text/xml&quot;` 或</code>“application/xml”`，这个属性中将保存着相应的xml 数据，是 XML 对应的 document 类型；<br>status：响应的HTTP状态码；<br>statusText：HTTP状态的说明；</p>
+<p>3.2、XHR对象的readyState属性表示请求/响应过程的当前活动阶段，这个属性的值如下<br>0-未初始化，尚未调用<code>open()</code>方法；<br>1-启动，调用了<code>open()</code>方法，未调用<code>send()</code>方法；<br>2-发送，已经调用了<code>send()</code>方法，未接收到响应；<br>3-接收，已经接收到部分响应数据；<br>4-完成，已经接收到全部响应数据；</p>
+<p>只要 readyState 的值变化，就会调用 readystatechange 事件，(其实为了逻辑上通顺，可以把readystatechange放到send之后，因为send时请求服务器，会进行网络通信，需要时间，在send之后指定readystatechange事件处理程序也是可以的，我一般都是这样用，但为了规范和跨浏览器兼容性，还是在open之前进行指定吧)。</p>
+<p>3.3、在readystatechange事件中，先判断响应是否接收完成，然后判断服务器是否成功处理请求，xhr.status 是状态码，状态码以2开头的都是成功，304表示从缓存中获取，上面的代码在每次请求的时候都加入了随机数，所以不会从缓存中取值，故该状态不需判断。</p>
+<h3 id="4、ajax请求不能跨域！"><a href="#4、ajax请求不能跨域！" class="headerlink" title="4、ajax请求不能跨域！"></a>4、ajax请求不能跨域！</h3><h3 id="参考文献："><a href="#参考文献：" class="headerlink" title="参考文献："></a>参考文献：</h3><p><a href="http://caibaojian.com/ajax-jsonp.html" target="_blank" rel="external">原生JS写Ajax的请求函数</a></p>
 
       
     </div>
@@ -429,7 +432,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+            <a href="/tags/js/" rel="tag"># js</a>
           
         </div>
       
@@ -442,15 +445,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/03/06/移动端设计与实现最佳方案【转】/" rel="next" title="移动端设计与实现最佳方案【转】">
+                <i class="fa fa-chevron-left"></i> 移动端设计与实现最佳方案【转】
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/03/05/前端调制代理工具-Nproxy/" rel="prev" title="前端调制代理工具-Nproxy">
-                前端调制代理工具-Nproxy <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -476,8 +479,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2017/02/25/Hexod搭建个人博客心得/"
-           data-title="Hexo搭建个人博客心得" data-url="http://yoursite.com/2017/02/25/Hexod搭建个人博客心得/">
+      <div class="ds-thread" data-thread-key="2017/03/14/原生JS封装ajax方法/"
+           data-title="原生JS封装ajax方法【转】" data-url="http://yoursite.com/2017/03/14/原生JS封装ajax方法/">
       </div>
     
   </div>
@@ -579,7 +582,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#环境要求"><span class="nav-number">1.</span> <span class="nav-text">环境要求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#全局安装Hexo"><span class="nav-number">2.</span> <span class="nav-text">全局安装Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#blog项目下安装"><span class="nav-number">3.</span> <span class="nav-text">blog项目下安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Github配置"><span class="nav-number">4.</span> <span class="nav-text">Github配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考文献："><span class="nav-number">5.</span> <span class="nav-text">参考文献：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JS原生ajax"><span class="nav-number">1.</span> <span class="nav-text">JS原生ajax</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、创建"><span class="nav-number">1.1.</span> <span class="nav-text">1、创建</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、连接和发送"><span class="nav-number">1.2.</span> <span class="nav-text">2、连接和发送</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、接收"><span class="nav-number">1.3.</span> <span class="nav-text">3、接收</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4、ajax请求不能跨域！"><span class="nav-number">1.4.</span> <span class="nav-text">4、ajax请求不能跨域！</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考文献："><span class="nav-number">1.5.</span> <span class="nav-text">参考文献：</span></a></li></ol></li></ol></div>
             
 
           </div>
