@@ -1,0 +1,1483 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Mac," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="目录操作
+
+
+命令名
+功能描述
+使用举例
+
+
+
+
+mkdir
+创建一个目录
+mkdir dirname
+
+
+rmdir
+删除一个目录
+rmdir dirname
+
+
+mvdir
+移动或重命名一个目录
+mvdir dir1 dir2
+
+
+cd
+改变当前目录
+cd dirname
+
+
+pwd
+显示当前目录的路径名
+pwd
+
+
+ls
+显示当前目录的内容
+ls -la
+
+
+dircmp
+比较两个目录的内容">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mac终端命令大全(收藏)">
+<meta property="og:url" content="http://yoursite.com/2017/02/25/Mac 终端命令大全/index.html">
+<meta property="og:site_name" content="good_zou">
+<meta property="og:description" content="目录操作
+
+
+命令名
+功能描述
+使用举例
+
+
+
+
+mkdir
+创建一个目录
+mkdir dirname
+
+
+rmdir
+删除一个目录
+rmdir dirname
+
+
+mvdir
+移动或重命名一个目录
+mvdir dir1 dir2
+
+
+cd
+改变当前目录
+cd dirname
+
+
+pwd
+显示当前目录的路径名
+pwd
+
+
+ls
+显示当前目录的内容
+ls -la
+
+
+dircmp
+比较两个目录的内容">
+<meta property="og:updated_time" content="2017-05-08T12:21:30.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mac终端命令大全(收藏)">
+<meta name="twitter:description" content="目录操作
+
+
+命令名
+功能描述
+使用举例
+
+
+
+
+mkdir
+创建一个目录
+mkdir dirname
+
+
+rmdir
+删除一个目录
+rmdir dirname
+
+
+mvdir
+移动或重命名一个目录
+mvdir dir1 dir2
+
+
+cd
+改变当前目录
+cd dirname
+
+
+pwd
+显示当前目录的路径名
+pwd
+
+
+ls
+显示当前目录的内容
+ls -la
+
+
+dircmp
+比较两个目录的内容">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/02/25/Mac 终端命令大全/"/>
+
+
+
+
+
+  <title> Mac终端命令大全(收藏) | good_zou </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?4e913dfcfeeb7b7fe99e016c19b38f7a";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">good_zou</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/25/Mac 终端命令大全/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="good_zou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="good_zou">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Mac终端命令大全(收藏)
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-25T12:14:29+08:00">
+                2017-02-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Mac/" itemprop="url" rel="index">
+                    <span itemprop="name">Mac</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/02/25/Mac 终端命令大全/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/25/Mac 终端命令大全/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2017/02/25/Mac 终端命令大全/" class="leancloud_visitors" data-flag-title="Mac终端命令大全(收藏)">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="目录操作"><a href="#目录操作" class="headerlink" title="目录操作"></a>目录操作</h3><table>
+<thead>
+<tr>
+<th>命令名</th>
+<th>功能描述</th>
+<th>使用举例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mkdir</td>
+<td>创建一个目录</td>
+<td>mkdir dirname</td>
+</tr>
+<tr>
+<td>rmdir</td>
+<td>删除一个目录</td>
+<td>rmdir dirname</td>
+</tr>
+<tr>
+<td>mvdir</td>
+<td>移动或重命名一个目录</td>
+<td>mvdir dir1 dir2</td>
+</tr>
+<tr>
+<td>cd</td>
+<td>改变当前目录</td>
+<td>cd dirname</td>
+</tr>
+<tr>
+<td>pwd</td>
+<td>显示当前目录的路径名</td>
+<td>pwd</td>
+</tr>
+<tr>
+<td>ls</td>
+<td>显示当前目录的内容</td>
+<td>ls -la</td>
+</tr>
+<tr>
+<td>dircmp</td>
+<td>比较两个目录的内容</td>
+<td>dircmp dir1 dir2</td>
+</tr>
+</tbody>
+</table>
+<a id="more"></a>
+<h3 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h3><table>
+<thead>
+<tr>
+<th>命令名</th>
+<th>功能描述</th>
+<th>使用举例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cat</td>
+<td>显示或连接文件</td>
+<td>cat filename</td>
+</tr>
+<tr>
+<td>pg</td>
+<td>分页格式化显示文件内容    pg</td>
+<td>filename</td>
+</tr>
+<tr>
+<td>more</td>
+<td>分屏显示文件内容</td>
+<td>more filename</td>
+</tr>
+<tr>
+<td>od</td>
+<td>显示非文本文件的内容</td>
+<td>od -c filename</td>
+</tr>
+<tr>
+<td>cp</td>
+<td>复制文件或目录</td>
+<td>cp file1 file2</td>
+</tr>
+<tr>
+<td>rm</td>
+<td>删除文件或目录</td>
+<td>rm filename</td>
+</tr>
+<tr>
+<td>mv</td>
+<td>改变文件名或所在目录</td>
+<td>mv file1 file2</td>
+</tr>
+<tr>
+<td>ln</td>
+<td>联接文件    ln -s file1 file2</td>
+</tr>
+<tr>
+<td>find</td>
+<td>使用匹配表达式查找文件</td>
+<td>find . -name “*.c” -print</td>
+</tr>
+<tr>
+<td>file</td>
+<td>显示文件类型</td>
+<td>file filename</td>
+</tr>
+<tr>
+<td>open</td>
+<td>使用默认的程序打开文件</td>
+<td>open filename</td>
+</tr>
+</tbody>
+</table>
+<h3 id="选择操作"><a href="#选择操作" class="headerlink" title="选择操作"></a>选择操作</h3><table>
+<thead>
+<tr>
+<th>命令名</th>
+<th>功能描述</th>
+<th>使用举例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>head</td>
+<td>显示文件的最初几行</td>
+<td>head -20 filename</td>
+</tr>
+<tr>
+<td>tail</td>
+<td>显示文件的最后几行</td>
+<td>tail -15 filename</td>
+</tr>
+<tr>
+<td>cut</td>
+<td>显示文件每行中的某些域</td>
+<td>cut -f1,7 -d: /etc/passwd</td>
+</tr>
+<tr>
+<td>colrm</td>
+<td>从标准输入中删除若干列</td>
+<td>colrm 8 20 file2</td>
+</tr>
+<tr>
+<td>paste</td>
+<td>横向连接文件</td>
+<td>paste file1 file2</td>
+</tr>
+<tr>
+<td>diff</td>
+<td>比较并显示两个文件的差异</td>
+<td>diff file1 file2</td>
+</tr>
+<tr>
+<td>sed</td>
+<td>非交互方式流编辑器</td>
+<td>sed “s/red/green/g” filename</td>
+</tr>
+<tr>
+<td>grep</td>
+<td>在文件中按模式查找</td>
+<td>grep “^[a-zA-Z]” filename</td>
+</tr>
+<tr>
+<td>awk</td>
+<td>在文件中查找并处理模式</td>
+<td>awk ‘{print $1 $1}’ filename</td>
+</tr>
+<tr>
+<td>sort</td>
+<td>排序或归并文件</td>
+<td>sort -d -f -u file1</td>
+</tr>
+<tr>
+<td>uniq</td>
+<td>去掉文件中的重复行</td>
+<td>uniq file1 file2</td>
+</tr>
+<tr>
+<td>comm</td>
+<td>显示两有序文件的公共和非公共行    comm file1 file2</td>
+</tr>
+<tr>
+<td>wc</td>
+<td>统计文件的字符数、词数和行数</td>
+<td>wc filename</td>
+</tr>
+<tr>
+<td>nl</td>
+<td>给文件加上行号</td>
+<td>nl file1 &gt;file2</td>
+</tr>
+</tbody>
+</table>
+<h3 id="安全操作"><a href="#安全操作" class="headerlink" title="安全操作"></a>安全操作</h3><table>
+<thead>
+<tr>
+<th>命令名</th>
+<th>功能描述</th>
+<th>使用举例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>passwd</td>
+<td>修改用户密码</td>
+<td>passwd</td>
+</tr>
+<tr>
+<td>chmod</td>
+<td>改变文件或目录的权限</td>
+<td>chmod ug+x filename</td>
+</tr>
+<tr>
+<td>umask</td>
+<td>定义创建文件的权限掩码</td>
+<td>umask 027</td>
+</tr>
+<tr>
+<td>chown</td>
+<td>改变文件或目录的属主</td>
+<td>chown newowner filename</td>
+</tr>
+<tr>
+<td>chgrp</td>
+<td>改变文件或目录的所属组</td>
+<td>chgrp staff filename</td>
+</tr>
+<tr>
+<td>xlock</td>
+<td>给终端上锁</td>
+<td>xlock -remote</td>
+</tr>
+</tbody>
+</table>
+<h3 id="编程操作"><a href="#编程操作" class="headerlink" title="编程操作"></a>编程操作</h3><table>
+<thead>
+<tr>
+<th>命令名</th>
+<th>功能描述</th>
+<th>使用举例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>make</td>
+<td>维护可执行程序的最新版本</td>
+<td>make</td>
+</tr>
+<tr>
+<td>touch</td>
+<td>更新文件的访问和修改时间</td>
+<td>touch -m 05202400 filename</td>
+</tr>
+<tr>
+<td>dbx</td>
+<td>命令行界面调试工具</td>
+<td>dbx a.out</td>
+</tr>
+<tr>
+<td>xde</td>
+<td>图形用户界面调试工具</td>
+<td>xde a.out</td>
+</tr>
+</tbody>
+</table>
+<h3 id="进程操作"><a href="#进程操作" class="headerlink" title="进程操作"></a>进程操作</h3><table>
+<thead>
+<tr>
+<th>命令名</th>
+<th>功能描述</th>
+<th>使用举例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ps</td>
+<td>显示进程当前状态</td>
+<td>ps u</td>
+</tr>
+<tr>
+<td>kill</td>
+<td>终止进程</td>
+<td>kill -9 30142</td>
+</tr>
+<tr>
+<td>nice</td>
+<td>改变待执行命令的优先级</td>
+<td>nice cc -c *.c</td>
+</tr>
+<tr>
+<td>renice</td>
+<td>改变已运行进程的优先级</td>
+<td>renice +20 32768</td>
+</tr>
+</tbody>
+</table>
+<h3 id="时间操作"><a href="#时间操作" class="headerlink" title="时间操作"></a>时间操作</h3><table>
+<thead>
+<tr>
+<th>命令名</th>
+<th>功能描述</th>
+<th>使用举例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>date</td>
+<td>显示系统的当前日期和时间</td>
+<td>date</td>
+</tr>
+<tr>
+<td>cal</td>
+<td>显示日历</td>
+<td>cal 8 1996</td>
+</tr>
+<tr>
+<td>time</td>
+<td>统计程序的执行时间</td>
+<td>time a.out</td>
+</tr>
+</tbody>
+</table>
+<h3 id="网络与通信操作"><a href="#网络与通信操作" class="headerlink" title="网络与通信操作"></a>网络与通信操作</h3><table>
+<thead>
+<tr>
+<th>命令名</th>
+<th>功能描述</th>
+<th>使用举例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>telnet</td>
+<td>远程登录</td>
+<td>telnet hpc.sp.net.edu.cn</td>
+</tr>
+<tr>
+<td>rlogin</td>
+<td>远程登录</td>
+<td>rlogin hostname -l username</td>
+</tr>
+<tr>
+<td>rsh</td>
+<td>在远程主机执行指定命令</td>
+<td>rsh f01n03 date</td>
+</tr>
+<tr>
+<td>ftp</td>
+<td>在本地主机与远程主机之间传输文件</td>
+<td>ftp ftp.sp.net.edu.cn</td>
+</tr>
+<tr>
+<td>rcp</td>
+<td>在本地主机与远程主机 之间复制文件</td>
+<td>rcp file1 host1:file2</td>
+</tr>
+<tr>
+<td>ping</td>
+<td>给一个网络主机发送 回应请求</td>
+<td>ping hpc.sp.net.edu.cn</td>
+</tr>
+<tr>
+<td>mail</td>
+<td>阅读和发送电子邮件</td>
+<td>mail</td>
+</tr>
+<tr>
+<td>write</td>
+<td>给另一用户发送报文</td>
+<td>write username pts/1</td>
+</tr>
+<tr>
+<td>mesg</td>
+<td>允许或拒绝接收报文</td>
+<td>mesg n</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Korn-Shell-命令"><a href="#Korn-Shell-命令" class="headerlink" title="Korn Shell 命令"></a>Korn Shell 命令</h3><table>
+<thead>
+<tr>
+<th>命令名</th>
+<th>功能描述</th>
+<th>使用举例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>history</td>
+<td>列出最近执行过的 几条命令及编号</td>
+<td>history</td>
+</tr>
+<tr>
+<td>r</td>
+<td>重复执行最近执行过的 某条命令</td>
+<td>r -2</td>
+</tr>
+<tr>
+<td>alias</td>
+<td>给某个命令定义别名</td>
+<td>alias del=rm -i</td>
+</tr>
+<tr>
+<td>unalias</td>
+<td>取消对某个别名的定义</td>
+<td>unalias del</td>
+</tr>
+</tbody>
+</table>
+<h3 id="其它命令"><a href="#其它命令" class="headerlink" title="其它命令"></a>其它命令</h3><table>
+<thead>
+<tr>
+<th>命令名</th>
+<th>功能描述</th>
+<th>使用举例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>uname</td>
+<td>显示操作系统的有关信息</td>
+<td>uname -a</td>
+</tr>
+<tr>
+<td>clear</td>
+<td>清除屏幕或窗口内容</td>
+<td>clear</td>
+</tr>
+<tr>
+<td>env</td>
+<td>显示当前所有设置过的环境变量</td>
+<td>env</td>
+</tr>
+<tr>
+<td>who</td>
+<td>列出当前登录的所有用户</td>
+<td>who</td>
+</tr>
+<tr>
+<td>whoami</td>
+<td>显示当前正进行操作的用户名</td>
+<td>whoami</td>
+</tr>
+<tr>
+<td>tty</td>
+<td>显示终端或伪终端的名称</td>
+<td>tty</td>
+</tr>
+<tr>
+<td>stty</td>
+<td>显示或重置控制键定义</td>
+<td>stty -a</td>
+</tr>
+<tr>
+<td>du</td>
+<td>查询磁盘使用情况</td>
+<td>du -k subdir</td>
+</tr>
+<tr>
+<td>df</td>
+<td>显示文件系统的总空间和可用空间</td>
+<td>df /tmp</td>
+</tr>
+<tr>
+<td>w</td>
+<td>显示当前系统活动的总信息</td>
+<td>w</td>
+</tr>
+</tbody>
+</table>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Mac/" rel="tag"># Mac</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/10/25/20 个 CSS 高级技巧汇总/" rel="next" title="20 个 CSS 高级技巧汇总">
+                <i class="fa fa-chevron-left"></i> 20 个 CSS 高级技巧汇总
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/02/25/Mac 终端命令大全/"
+           data-title="Mac终端命令大全(收藏)" data-url="http://yoursite.com/2017/02/25/Mac 终端命令大全/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="good_zou" />
+          <p class="site-author-name" itemprop="name">good_zou</p>
+           
+              <p class="site-description motion-element" itemprop="description">日求三餐,夜求一眠,如此足以.</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/zouyingyang" target="_blank" title="Github">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  Github
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/543729532" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              关于前端
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://shenzhenjs.com" title="深圳前端" target="_blank">深圳前端</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://iwan0.com/" title="i玩林" target="_blank">i玩林</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#目录操作"><span class="nav-number">1.</span> <span class="nav-text">目录操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件操作"><span class="nav-number">2.</span> <span class="nav-text">文件操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#选择操作"><span class="nav-number">3.</span> <span class="nav-text">选择操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安全操作"><span class="nav-number">4.</span> <span class="nav-text">安全操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编程操作"><span class="nav-number">5.</span> <span class="nav-text">编程操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进程操作"><span class="nav-number">6.</span> <span class="nav-text">进程操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#时间操作"><span class="nav-number">7.</span> <span class="nav-text">时间操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网络与通信操作"><span class="nav-number">8.</span> <span class="nav-text">网络与通信操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Korn-Shell-命令"><span class="nav-number">9.</span> <span class="nav-text">Korn Shell 命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其它命令"><span class="nav-number">10.</span> <span class="nav-text">其它命令</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">good_zou</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"goodzou"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("1ArAcWALr0uH5mbbMUMYoTcg-gzGzoHsz", "OC6OSFC9kWbjYL6AIi43Oiwe");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+
+  
+
+</body>
+</html>

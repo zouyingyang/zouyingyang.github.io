@@ -1,0 +1,928 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Css," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="使用技巧会让人变的越来越懒，没错，我就是想让你变懒。下面是我收集的CSS高级技巧，希望你懒出境界。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20 个 CSS 高级技巧汇总">
+<meta property="og:url" content="http://yoursite.com/2016/10/25/20 个 CSS 高级技巧汇总/index.html">
+<meta property="og:site_name" content="good_zou">
+<meta property="og:description" content="使用技巧会让人变的越来越懒，没错，我就是想让你变懒。下面是我收集的CSS高级技巧，希望你懒出境界。">
+<meta property="og:updated_time" content="2017-05-08T11:46:58.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="20 个 CSS 高级技巧汇总">
+<meta name="twitter:description" content="使用技巧会让人变的越来越懒，没错，我就是想让你变懒。下面是我收集的CSS高级技巧，希望你懒出境界。">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/10/25/20 个 CSS 高级技巧汇总/"/>
+
+
+
+
+
+  <title> 20 个 CSS 高级技巧汇总 | good_zou </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?4e913dfcfeeb7b7fe99e016c19b38f7a";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">good_zou</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/10/25/20 个 CSS 高级技巧汇总/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="good_zou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="good_zou">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                20 个 CSS 高级技巧汇总
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-10-25T12:14:29+08:00">
+                2016-10-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Css/" itemprop="url" rel="index">
+                    <span itemprop="name">Css</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/10/25/20 个 CSS 高级技巧汇总/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/25/20 个 CSS 高级技巧汇总/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2016/10/25/20 个 CSS 高级技巧汇总/" class="leancloud_visitors" data-flag-title="20 个 CSS 高级技巧汇总">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>使用技巧会让人变的越来越懒，没错，我就是想让你变懒。下面是我收集的CSS高级技巧，希望你懒出境界。<br><a id="more"></a></p>
+<h4 id="1-黑白图像"><a href="#1-黑白图像" class="headerlink" title="1. 黑白图像"></a>1. 黑白图像</h4><p>这段代码会让你的彩色照片显示为黑白照片，是不是很酷？<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">img</span><span class="selector-class">.desaturate</span> &#123;</div><div class="line">    <span class="attribute">filter</span>: <span class="built_in">grayscale</span>(100%);</div><div class="line">    <span class="attribute">-webkit-filter</span>: <span class="built_in">grayscale</span>(100%);</div><div class="line">    <span class="attribute">-moz-filter</span>: <span class="built_in">grayscale</span>(100%);</div><div class="line">    <span class="attribute">-ms-filter</span>: <span class="built_in">grayscale</span>(100%);</div><div class="line">    <span class="attribute">-o-filter</span>: <span class="built_in">grayscale</span>(100%);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h4 id="2-使用-not-在菜单上应用-取消应用边框"><a href="#2-使用-not-在菜单上应用-取消应用边框" class="headerlink" title="2. 使用 :not() 在菜单上应用/取消应用边框"></a>2. 使用 :not() 在菜单上应用/取消应用边框</h4><p>先给每一个菜单项添加边框<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* add border */</span> <span class="selector-class">.nav</span> <span class="selector-tag">li</span> &#123; <span class="attribute">border-right</span>: <span class="number">1px</span> solid <span class="number">#666</span>; &#125;</div></pre></td></tr></table></figure></p>
+<p>……然后再除去最后一个元素……<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">// remove border / .nav li:last-child &#123;  border-right: none;&#125;</div></pre></td></tr></table></figure></p>
+<p>……可以直接使用 :not() 伪类来应用元素：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.nav</span> <span class="selector-tag">li</span><span class="selector-pseudo">:not(</span><span class="selector-pseudo">:last-child)</span> &#123; <span class="attribute">border-right</span>: <span class="number">1px</span> solid <span class="number">#666</span>; &#125;</div></pre></td></tr></table></figure></p>
+<p>这样代码就干净，易读，易于理解了。<br>当然，如果你的新元素有兄弟元素的话，也可以使用通用的兄弟选择符（~）：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">.<span class="selector-class">.nav</span> <span class="selector-tag">li</span><span class="selector-pseudo">:first-child</span> ~ <span class="selector-tag">li</span> &#123; <span class="attribute">border-left</span>: <span class="number">1px</span> solid <span class="number">#666</span>; &#125;</div></pre></td></tr></table></figure></p>
+<h4 id="3-页面顶部阴影"><a href="#3-页面顶部阴影" class="headerlink" title="3. 页面顶部阴影"></a>3. 页面顶部阴影</h4><p>下面这个简单的 CSS3 代码片段可以给网页加上漂亮的顶部阴影效果：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">body</span><span class="selector-pseudo">:before</span> &#123;</div><div class="line">    <span class="attribute">content</span>: <span class="string">""</span>;</div><div class="line">    <span class="attribute">position</span>: fixed;</div><div class="line">    <span class="attribute">top</span>: -<span class="number">10px</span>;</div><div class="line">    <span class="attribute">left</span>: <span class="number">0</span>;</div><div class="line">    <span class="attribute">width</span>: <span class="number">100%</span>;</div><div class="line">    <span class="attribute">height</span>: <span class="number">10px</span>;</div><div class="line">    <span class="attribute">-webkit-box-shadow</span>: <span class="number">0px</span> <span class="number">0px</span> <span class="number">10px</span> <span class="built_in">rgba</span>(0,0,0,.8);</div><div class="line">    <span class="attribute">-moz-box-shadow</span>: <span class="number">0px</span> <span class="number">0px</span> <span class="number">10px</span> <span class="built_in">rgba</span>(0,0,0,.8);</div><div class="line">    <span class="attribute">box-shadow</span>: <span class="number">0px</span> <span class="number">0px</span> <span class="number">10px</span> <span class="built_in">rgba</span>(0,0,0,.8);</div><div class="line">    <span class="attribute">z-index</span>: <span class="number">100</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h4 id="4-给-body-添加行高"><a href="#4-给-body-添加行高" class="headerlink" title="4. 给 body 添加行高"></a>4. 给 body 添加行高</h4><p>你不需要分别添加 line-height 到每个p,h标记等。只要添加到 body 即可：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">body</span> &#123; <span class="attribute">line-height</span>: <span class="number">1</span>; &#125;</div></pre></td></tr></table></figure></p>
+<p>这样文本元素就可以很容易地从 body 继承。</p>
+<h4 id="5-所有一切都垂直居中"><a href="#5-所有一切都垂直居中" class="headerlink" title="5. 所有一切都垂直居中"></a>5. 所有一切都垂直居中</h4><p>要将所有元素垂直居中，太简单了：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">html</span>, <span class="selector-tag">body</span> &#123; <span class="attribute">height</span>: <span class="number">100%</span>; <span class="attribute">margin</span>: <span class="number">0</span>; &#125;</div><div class="line"><span class="selector-tag">body</span> &#123;</div><div class="line">    <span class="attribute">-webkit-align-items</span>: center;</div><div class="line">    <span class="attribute">-ms-flex-align</span>: center;</div><div class="line">    <span class="attribute">align-items</span>: center;</div><div class="line">    <span class="attribute">display</span>: -webkit-flex;</div><div class="line">    <span class="attribute">display</span>: flex;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>看，是不是很简单。<br>注意：在IE11中要小心flexbox。</p>
+<h4 id="6-逗号分隔的列表"><a href="#6-逗号分隔的列表" class="headerlink" title="6. 逗号分隔的列表"></a>6. 逗号分隔的列表</h4><p>让HTML列表项看上去像一个真正的，用逗号分隔的列表：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">ul</span> &gt; <span class="selector-tag">li</span><span class="selector-pseudo">:not(</span><span class="selector-pseudo">:last-child)</span><span class="selector-pseudo">::after</span> &#123; <span class="attribute">content</span>: <span class="string">","</span>; &#125;</div></pre></td></tr></table></figure></p>
+<p>对最后一个列表项使用 :not() 伪类。</p>
+<h4 id="7-使用负的-nth-child-选择项目"><a href="#7-使用负的-nth-child-选择项目" class="headerlink" title="7. 使用负的 nth-child 选择项目"></a>7. 使用负的 nth-child 选择项目</h4><p>在CSS中使用负的 nth-child 选择项目1到项目n。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">li</span> &#123; <span class="attribute">display</span>: none; &#125;</div><div class="line"><span class="comment">/*items 1 through 3display them */</span></div><div class="line"><span class="selector-tag">li</span><span class="selector-pseudo">:nth-child(-n+3)</span> &#123; <span class="attribute">display</span>: block; &#125;</div></pre></td></tr></table></figure></p>
+<h4 id="8-对图标使用-SVG"><a href="#8-对图标使用-SVG" class="headerlink" title="8. 对图标使用 SVG"></a>8. 对图标使用 SVG</h4><p>我们没有理由不对图标使用SVG：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.logo</span> &#123; <span class="attribute">background</span>: <span class="built_in">url</span>(<span class="string">"logo.svg"</span>); &#125;</div></pre></td></tr></table></figure></p>
+<p>SVG对所有的分辨率类型都具有良好的扩展性，并支持所有浏览器都回归到IE9。这样可以避开.png、.jpg或.gif文件了。</p>
+<h4 id="9-优化显示文本"><a href="#9-优化显示文本" class="headerlink" title="9. 优化显示文本"></a>9. 优化显示文本</h4><p>有时，字体并不能在所有设备上都达到最佳的显示，所以可以让设备浏览器来帮助你：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">html</span> &#123;</div><div class="line">    <span class="attribute">-moz-osx-font-smoothing</span>: grayscale;</div><div class="line">    <span class="attribute">-webkit-font-smoothing</span>: antialiased;</div><div class="line">    <span class="attribute">text-rendering</span>: optimizeLegibility;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>注：请负责任地使用 optimizeLegibility。此外，IE /Edge没有 text-rendering 支持。</p>
+<h4 id="10-对纯-CSS-滑块使用-max-height"><a href="#10-对纯-CSS-滑块使用-max-height" class="headerlink" title="10. 对纯 CSS 滑块使用 max-height"></a>10. 对纯 CSS 滑块使用 max-height</h4><p>使用 max-height 和溢出隐藏来实现只有CSS的滑块：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.slider</span> <span class="selector-tag">ul</span> &#123; <span class="attribute">max-height</span>: <span class="number">0</span>; <span class="attribute">overlow</span>: hidden; &#125;</div><div class="line"><span class="selector-class">.slider</span><span class="selector-pseudo">:hover</span> <span class="selector-tag">ul</span> &#123; <span class="attribute">max-height</span>: <span class="number">1000px</span>; <span class="attribute">transition</span>: .<span class="number">3s</span> ease; &#125;</div></pre></td></tr></table></figure></p>
+<h4 id="11-继承-box-sizing"><a href="#11-继承-box-sizing" class="headerlink" title="11. 继承 box-sizing"></a>11. 继承 box-sizing</h4><p>让 box-sizing 继承 html：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">html</span> &#123; <span class="attribute">box-sizing</span>: border-box; &#125;</div><div class="line">*, *<span class="selector-pseudo">:before</span>, *<span class="selector-pseudo">:after</span> &#123; <span class="attribute">box-sizing</span>: inherit; &#125;</div></pre></td></tr></table></figure></p>
+<p>这样在插件或杠杆其他行为的其他组件中就能更容易地改变 box-sizing 了。</p>
+<h4 id="12-表格单元格等宽"><a href="#12-表格单元格等宽" class="headerlink" title="12. 表格单元格等宽"></a>12. 表格单元格等宽</h4><p>表格工作起来很麻烦，所以务必尽量使用 table-layout: fixed 来保持单元格的等宽：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.calendar</span> &#123; <span class="attribute">table-layout</span>: fixed; &#125;</div></pre></td></tr></table></figure></p>
+<h4 id="13-用-Flexbox-摆脱外边距的各种-hack"><a href="#13-用-Flexbox-摆脱外边距的各种-hack" class="headerlink" title="13. 用 Flexbox 摆脱外边距的各种 hack"></a>13. 用 Flexbox 摆脱外边距的各种 hack</h4><p>当需要用到列分隔符时，通过flexbox的 space-between 属性，你就可以摆脱nth-，first-，和 last-child 的hack了：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.list</span> &#123; <span class="attribute">display</span>: flex; <span class="attribute">justify-content</span>: space-between; &#125; <span class="selector-class">.list</span> <span class="selector-class">.person</span> &#123; <span class="attribute">flex-basis</span>: <span class="number">23%</span>; &#125;</div></pre></td></tr></table></figure></p>
+<p>现在，列表分隔符就会在均匀间隔的位置出现。</p>
+<h4 id="14-使用属性选择器用于空链接"><a href="#14-使用属性选择器用于空链接" class="headerlink" title="14. 使用属性选择器用于空链接"></a>14. 使用属性选择器用于空链接</h4><p>当a元素没有文本值，但 href 属性有链接的时候显示链接：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">a</span><span class="selector-attr">[href^="http"]</span><span class="selector-pseudo">:empty</span><span class="selector-pseudo">::before</span> &#123; <span class="attribute">content</span>: <span class="built_in">attr</span>(href); &#125;</div></pre></td></tr></table></figure></p>
+<p>相当方便。</p>
+<h4 id="15-检测鼠标双击"><a href="#15-检测鼠标双击" class="headerlink" title="15. 检测鼠标双击"></a>15. 检测鼠标双击</h4><p>HTML：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"test3"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">value</span>=<span class="string">" "</span> <span class="attr">readonly</span>=<span class="string">"true"</span> /&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://renpingjun.com"</span>&gt;</span>Double click me<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>CSS：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.test3</span> <span class="selector-tag">span</span> &#123; <span class="attribute">position</span>: relative; &#125;</div><div class="line"><span class="selector-class">.test3</span> <span class="selector-tag">span</span> <span class="selector-tag">a</span> &#123; <span class="attribute">position</span>: relative; <span class="attribute">z-index</span>: <span class="number">2</span>; &#125;</div><div class="line"><span class="selector-class">.test3</span> <span class="selector-tag">span</span> <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span>, <span class="selector-class">.test3</span> <span class="selector-tag">span</span> <span class="selector-tag">a</span><span class="selector-pseudo">:active</span> &#123; <span class="attribute">z-index</span>: <span class="number">4</span>; &#125;</div><div class="line"><span class="selector-class">.test3</span> <span class="selector-tag">span</span> <span class="selector-tag">input</span> &#123;</div><div class="line">    <span class="attribute">background</span>: transparent;</div><div class="line">    <span class="attribute">border</span>: <span class="number">0</span>;</div><div class="line">    <span class="attribute">cursor</span>: pointer;</div><div class="line">    <span class="attribute">position</span>: absolute;</div><div class="line">    <span class="attribute">top</span>: -<span class="number">1px</span>; <span class="attribute">left</span>: <span class="number">0</span>;</div><div class="line">    <span class="attribute">width</span>: <span class="number">101%</span>; <span class="comment">/* Hacky */</span></div><div class="line">    <span class="attribute">height</span>: <span class="number">301%</span>; <span class="comment">/* Hacky */</span></div><div class="line">    <span class="attribute">z-index</span>: <span class="number">3</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.test3</span> <span class="selector-tag">span</span> <span class="selector-tag">input</span><span class="selector-pseudo">:focus</span> &#123; <span class="attribute">background</span>: transparent; <span class="attribute">border</span>: <span class="number">0</span>; <span class="attribute">z-index</span>: <span class="number">1</span>; &#125;</div></pre></td></tr></table></figure></p>
+<h4 id="16-CSS-写出三角形"><a href="#16-CSS-写出三角形" class="headerlink" title="16. CSS 写出三角形"></a>16. CSS 写出三角形</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* create an arrow that points up */</span></div><div class="line"><span class="selector-tag">div</span><span class="selector-class">.arrow-up</span> &#123;</div><div class="line">    <span class="attribute">width</span>:<span class="number">0px</span>;</div><div class="line">    <span class="attribute">height</span>:<span class="number">0px</span>;</div><div class="line">    <span class="attribute">border-left</span>:<span class="number">5px</span> solid transparent; <span class="comment">/* left arrow slant */</span></div><div class="line">    <span class="attribute">border-right</span>:<span class="number">5px</span> solid transparent; <span class="comment">/* right arrow slant */</span></div><div class="line">    <span class="attribute">border-bottom</span>:<span class="number">5px</span> solid <span class="number">#2f2f2f</span>; <span class="comment">/* bottom, add background color here */</span></div><div class="line">    <span class="attribute">font-size</span>:<span class="number">0px</span>; <span class="attribute">line-height</span>:<span class="number">0px</span>;</div><div class="line">&#125; <span class="comment">/* create an arrow that points down */</span></div><div class="line"><span class="selector-tag">div</span><span class="selector-class">.arrow-down</span> &#123;</div><div class="line">    <span class="attribute">width</span>:<span class="number">0px</span>; <span class="attribute">height</span>:<span class="number">0px</span>;</div><div class="line">    <span class="attribute">border-left</span>:<span class="number">5px</span> solid transparent;</div><div class="line">    <span class="attribute">border-right</span>:<span class="number">5px</span> solid transparent;</div><div class="line">    <span class="attribute">border-top</span>:<span class="number">5px</span> solid <span class="number">#2f2f2f</span>;</div><div class="line">    <span class="attribute">font-size</span>:<span class="number">0px</span>; <span class="attribute">line-height</span>:<span class="number">0px</span>;</div><div class="line">&#125; <span class="comment">/* create an arrow that points left */</span></div><div class="line"><span class="selector-tag">div</span><span class="selector-class">.arrow-left</span> &#123;</div><div class="line">    <span class="attribute">width</span>:<span class="number">0px</span>; <span class="attribute">height</span>:<span class="number">0px</span>;</div><div class="line">    <span class="attribute">border-bottom</span>:<span class="number">5px</span> solid transparent; <span class="comment">/* left arrow slant */</span></div><div class="line">    <span class="attribute">border-top</span>:<span class="number">5px</span> solid transparent; <span class="comment">/* right arrow slant */</span></div><div class="line">    <span class="attribute">border-right</span>:<span class="number">5px</span> solid <span class="number">#2f2f2f</span>; <span class="comment">/* bottom, add background color here */</span></div><div class="line">    <span class="attribute">font-size</span>:<span class="number">0px</span>; <span class="attribute">line-height</span>:<span class="number">0px</span>;</div><div class="line">&#125; <span class="comment">/* create an arrow that points right */</span></div><div class="line"><span class="selector-tag">div</span><span class="selector-class">.arrow-right</span> &#123;</div><div class="line">    <span class="attribute">width</span>:<span class="number">0px</span>; <span class="attribute">height</span>:<span class="number">0px</span>;</div><div class="line">    <span class="attribute">border-bottom</span>:<span class="number">5px</span> solid transparent; <span class="comment">/* left arrow slant */</span></div><div class="line">    <span class="attribute">border-top</span>:<span class="number">5px</span> solid transparent; <span class="comment">/* right arrow slant */</span></div><div class="line">    <span class="attribute">border-left</span>:<span class="number">5px</span> solid <span class="number">#2f2f2f</span>; <span class="comment">/* bottom, add background color here */</span></div><div class="line">    <span class="attribute">font-size</span>:<span class="number">0px</span>; <span class="attribute">line-height</span>:<span class="number">0px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="17-CSS3-calc-的使用"><a href="#17-CSS3-calc-的使用" class="headerlink" title="17. CSS3 calc() 的使用"></a>17. CSS3 calc() 的使用</h4><p>calc() 用法类似于函数，能够给元素设置动态的值：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* basic calc */</span></div><div class="line"><span class="selector-class">.simpleBlock</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="built_in">calc</span>(100% - 100px);</div><div class="line">&#125; <span class="comment">/* calc in calc */</span></div><div class="line"><span class="selector-class">.complexBlock</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="built_in">calc</span>(100% - 50% / 3);</div><div class="line">    <span class="attribute">padding</span>: <span class="number">5px</span> <span class="built_in">calc</span>(3% - 2px);</div><div class="line">    <span class="attribute">margin-left</span>: <span class="built_in">calc</span>(10% + 10px);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h4 id="18-文本渐变"><a href="#18-文本渐变" class="headerlink" title="18. 文本渐变"></a>18. 文本渐变</h4><p>文本渐变效果很流行，使用 CSS3 能够很简单就实现：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">h2</span><span class="selector-attr">[data-text]</span> &#123;  <span class="attribute">position</span>: relative; &#125;</div><div class="line"><span class="selector-tag">h2</span><span class="selector-attr">[data-text]</span><span class="selector-pseudo">::after</span> &#123;</div><div class="line">    <span class="attribute">content</span>: <span class="built_in">attr</span>(data-text);</div><div class="line">    <span class="attribute">z-index</span>: <span class="number">10</span>;  <span class="attribute">color</span>: <span class="number">#e3e3e3</span>;</div><div class="line">    <span class="attribute">position</span>: absolute;</div><div class="line">    <span class="attribute">top</span>: <span class="number">0</span>;</div><div class="line">    <span class="attribute">left</span>: <span class="number">0</span>;</div><div class="line">    <span class="attribute">-webkit-mask-image</span>: <span class="built_in">-webkit-gradient</span>(linear, left top, left bottom, from(rgba(0,0,0,0)), <span class="built_in">color-stop</span>(50%, rgba(0,0,0,1)), <span class="built_in">to</span>(rgba(0,0,0,0)));&#125;</div></pre></td></tr></table></figure></p>
+<h4 id="19-禁用鼠标事件"><a href="#19-禁用鼠标事件" class="headerlink" title="19. 禁用鼠标事件"></a>19. 禁用鼠标事件</h4><p>CSS3 新增的 pointer-events 让你能够禁用元素的鼠标事件，例如，一个连接如果设置了下面的样式就无法点击了。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.disabled</span> &#123; <span class="attribute">pointer-events</span>: none; &#125;</div></pre></td></tr></table></figure></p>
+<h4 id="20-模糊文本"><a href="#20-模糊文本" class="headerlink" title="20. 模糊文本"></a>20. 模糊文本</h4><p>简单但很漂亮的文本模糊效果，简单又好看！<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.blur</span> &#123; <span class="attribute">color</span>: transparent; <span class="attribute">text-shadow</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> <span class="built_in">rgba</span>(0,0,0,0.5); &#125;</div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Css/" rel="tag"># Css</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/10/05/移动端web开发技巧/" rel="next" title="移动端web开发技巧">
+                <i class="fa fa-chevron-left"></i> 移动端web开发技巧
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/02/25/Mac 终端命令大全/" rel="prev" title="Mac终端命令大全(收藏)">
+                Mac终端命令大全(收藏) <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/10/25/20 个 CSS 高级技巧汇总/"
+           data-title="20 个 CSS 高级技巧汇总" data-url="http://yoursite.com/2016/10/25/20 个 CSS 高级技巧汇总/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="good_zou" />
+          <p class="site-author-name" itemprop="name">good_zou</p>
+           
+              <p class="site-description motion-element" itemprop="description">日求三餐,夜求一眠,如此足以.</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/zouyingyang" target="_blank" title="Github">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  Github
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/543729532" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              关于前端
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://shenzhenjs.com" title="深圳前端" target="_blank">深圳前端</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://iwan0.com/" title="i玩林" target="_blank">i玩林</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-黑白图像"><span class="nav-number">1.</span> <span class="nav-text">1. 黑白图像</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-使用-not-在菜单上应用-取消应用边框"><span class="nav-number">2.</span> <span class="nav-text">2. 使用 :not() 在菜单上应用/取消应用边框</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-页面顶部阴影"><span class="nav-number">3.</span> <span class="nav-text">3. 页面顶部阴影</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-给-body-添加行高"><span class="nav-number">4.</span> <span class="nav-text">4. 给 body 添加行高</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-所有一切都垂直居中"><span class="nav-number">5.</span> <span class="nav-text">5. 所有一切都垂直居中</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-逗号分隔的列表"><span class="nav-number">6.</span> <span class="nav-text">6. 逗号分隔的列表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-使用负的-nth-child-选择项目"><span class="nav-number">7.</span> <span class="nav-text">7. 使用负的 nth-child 选择项目</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-对图标使用-SVG"><span class="nav-number">8.</span> <span class="nav-text">8. 对图标使用 SVG</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9-优化显示文本"><span class="nav-number">9.</span> <span class="nav-text">9. 优化显示文本</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#10-对纯-CSS-滑块使用-max-height"><span class="nav-number">10.</span> <span class="nav-text">10. 对纯 CSS 滑块使用 max-height</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#11-继承-box-sizing"><span class="nav-number">11.</span> <span class="nav-text">11. 继承 box-sizing</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#12-表格单元格等宽"><span class="nav-number">12.</span> <span class="nav-text">12. 表格单元格等宽</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#13-用-Flexbox-摆脱外边距的各种-hack"><span class="nav-number">13.</span> <span class="nav-text">13. 用 Flexbox 摆脱外边距的各种 hack</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#14-使用属性选择器用于空链接"><span class="nav-number">14.</span> <span class="nav-text">14. 使用属性选择器用于空链接</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#15-检测鼠标双击"><span class="nav-number">15.</span> <span class="nav-text">15. 检测鼠标双击</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#16-CSS-写出三角形"><span class="nav-number">16.</span> <span class="nav-text">16. CSS 写出三角形</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#17-CSS3-calc-的使用"><span class="nav-number">17.</span> <span class="nav-text">17. CSS3 calc() 的使用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#18-文本渐变"><span class="nav-number">18.</span> <span class="nav-text">18. 文本渐变</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#19-禁用鼠标事件"><span class="nav-number">19.</span> <span class="nav-text">19. 禁用鼠标事件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#20-模糊文本"><span class="nav-number">20.</span> <span class="nav-text">20. 模糊文本</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">good_zou</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"goodzou"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("1ArAcWALr0uH5mbbMUMYoTcg-gzGzoHsz", "OC6OSFC9kWbjYL6AIi43Oiwe");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+
+  
+
+</body>
+</html>
