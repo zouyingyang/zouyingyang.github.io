@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>邹应洋</title>
+    <meta name="keywords" content="邹应洋">
+    <meta name="description" content="邹应洋">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <link rel="stylesheet" href="css/myself.css">
+</head>
+<body>
+<div class="box">
+    <div class="header_box cl">
+        <div class="perBox">
+            <p class="name_box blod">邹应洋 <span style="font-size: 11px">前端开发</span></p>
+            <p><i class="iconfont"></i>18390000041</p>
+            <p><i class="iconfont"></i>543729532@qq.com</p>
+        </div>
+    </div>
+    <div class="line_bottom"></div>
+    <div class="raw_box">
+        <p class="blod title">生活</p>
+        <div class="shuffling_box" id="shuffling_box">
+            <ul class="img_box cl" id="img_box">
+                <li><img src="images/1.PNG" alt=""></li>
+                <li><img src="images/2.PNG" alt=""></li>
+                <li><img src="images/3.PNG" alt=""></li>
+                <li><img src="images/4.PNG" alt=""></li>
+                <li><img src="images/5.JPG" alt=""></li>
+                <li><img src="images/6.JPG" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <div class="line_bottom"></div>
+    <div class="tech_box">
+        <p class="blod title">技能</p>
+        <div class="skillsBox">
+            <div class="skillsList">
+                <p>Html</p>
+                <div class="skillsLine" style="width:200px;"></div>
+            </div>
+            <div class="skillsList">
+                <p>Css</p>
+                <div class="skillsLine" style="width:190px;"></div>
+            </div>
+            <div class="skillsList">
+                <p>JavaScript</p>
+                <div class="skillsLine" style="width:150px;"></div>
+            </div>
+            <div class="skillsList">
+                <p>Avalon</p>
+                <div class="skillsLine" style="width:120px;"></div>
+            </div>
+            <div class="skillsList">
+                <p>Webpack</p>
+                <div class="skillsLine" style="width:130px;"></div>
+            </div>
+            <div class="skillsList">
+                <p>Vue</p>
+                <div class="skillsLine" style="width:150px;"></div>
+            </div>
+            <div class="skillsList">
+                <p>jQuery</p>
+                <div class="skillsLine" style="width:150px;"></div>
+            </div>
+            <div class="skillsList">
+                <p>Gulp</p>
+                <div class="skillsLine" style="width:120px;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="line_bottom"></div>
+    <div class="company_box">
+        <p class="blod title">任职</p>
+        <div class="company_list cl">
+            <!--<img src="images/sqbj.png" alt="社区半径">-->
+            <div class="company_desc_box">
+                <div class="company_desc_title" style="color:#000">
+                    湖南宝伦天地科技信息有限公司<span class="company_posi"> __ WEB前端开发</span>
+                </div>
+                <div class="company_desc">
+                    负责公司运营后台管理系统,社区半径微信公众号,接口文档管理系统的开发与维护.
+                </div>
+            </div>
+        </div>
+        <div class="company_list cl">
+            <!--<img src="images/qn.jpg" alt="湖南启能" style="border-radius: 5px">-->
+            <div class="company_desc_box">
+                <div class="company_desc_title" style="color:#000">
+                    湖南赛腾科技有限公司<span class="company_posi"> __ WEB前端开发</span>
+                </div>
+                <div class="company_desc">
+                    负责公司前端静模块开发
+                </div>
+            </div>
+        </div>
+        <div class="company_list cl">
+            <!--<img src="images/qn.jpg" alt="湖南启能" style="border-radius: 5px">-->
+            <div class="company_desc_box">
+                <div class="company_desc_title" style="color:#000">
+                    湖南启能新媒体科技有限公司<span class="company_posi"> __ WEB前端开发</span>
+                </div>
+                <div class="company_desc">
+                    负责公司前端静态页面开发
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="line_bottom"></div>
+    <div class="school_box">
+        <p class="blod title">学校</p>
+        <div class="cl">
+            <img src="images/school.jpg" alt="湖南信息职业技术学院" style="margin: 0 0 20px 20px">
+            <p class="school_desc">2012年9月至2015年6月在<span class="blod"> 湖南信息职业技术学院 </span>
+                修读计算机网络工程专业.
+            </p>
+        </div>
+    </div>
+</div>
+<script>
+    window.onload = function(){
+        var oDiv = document.getElementById('shuffling_box');
+        var oUl = document.getElementById('img_box');
+        var speed = -2;
+
+        oUl.innerHTML += oUl.innerHTML;
+        var oLi= oUl.getElementsByTagName('li');
+        oUl.style.width = oLi.length*130+'px';
+
+        var oBtn1 = document.getElementById('btn1');
+        var oBtn2 = document.getElementById('btn2');
+
+
+        function move(){
+            if(oUl.offsetLeft<-(oUl.offsetWidth/2)){//向左滚动，当靠左的图4移出边框时
+                oUl.style.left = 0;
+            }
+
+            oUl.style.left = oUl.offsetLeft + speed + 'px';
+        }
+
+        var timer = setInterval(move,40);//全局变量 ，保存返回的定时器
+
+        oDiv.addEventListener('mouseout', function () {
+            timer = setInterval(move,40);
+        },false);
+        oDiv.addEventListener('mousemove', function () {
+            clearInterval(timer);//鼠标移入清除定时器
+        },false);
+    }
+</script>
+</body>
+</html>
+</html>
